@@ -17,9 +17,11 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
   ],
   rules: {
     "react/react-in-jsx-scope": "off",
@@ -45,6 +47,7 @@ module.exports = {
         pathGroupsExcludedImportTypes: ["builtin"],
       },
     ],
+    "filenames/no-index": 2
   },
   overrides: [
     {
