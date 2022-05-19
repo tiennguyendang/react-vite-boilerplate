@@ -36,7 +36,8 @@
   },
   "engines": {
     "npm": "please use yarn",
-    "yarn": ">= 1.19.1"
+    "yarn": ">= 1.19.1",
+    "node": ">=14.0.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
