@@ -53,5 +53,6 @@ type(scope?): subject
 
 ```bash
 git commit -m "Update login screen" # Bad commit message ⚠️
-git commit -m "feat: Update login screen" # Good commit message ✅
+git commit -m "feat: Update login screen" # Violated commit message ⚠️ (subject must not be sentence-case, start-case, pascal-case, upper-case)
+git commit -m "feat: update login screen" # Good commit message ✅
 ```
