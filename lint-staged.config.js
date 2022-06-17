@@ -16,6 +16,15 @@ module.exports = {
 
     return [
       `prettier --write ${escapedFileNames}`,
+      `git add ${escapedFileNames}`,
+    ];
+  },
+  "src/**/*.{scss,css}": filenames => {
+    const escapedFileNames = filenames
+      .map(name => name.replace(/\\/g, "/"))
+      .join(" ");
+
+    return [
       `stylelint --fix ${escapedFileNames}`,
       `git add ${escapedFileNames}`,
     ];
