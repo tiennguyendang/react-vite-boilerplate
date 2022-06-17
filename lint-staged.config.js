@@ -1,5 +1,5 @@
 module.exports = {
-  "src/**/*.{js,jsx,ts,tsx}": filenames => {
+  "src/**/*.{js,jsx}": filenames => {
     const escapedFileNames = filenames
       .map(name => name.replace(/\\/g, "\\/"))
       .join(" ");
@@ -9,7 +9,7 @@ module.exports = {
       `git add ${escapedFileNames}`,
     ];
   },
-  "src/**/*.{js,jsx,ts,tsx,scss,css}": filenames => {
+  "src/**/*.{js,jsx,scss,css}": filenames => {
     const escapedFileNames = filenames
       .map(name => name.replace(/\\/g, "/"))
       .join(" ");

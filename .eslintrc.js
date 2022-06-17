@@ -49,6 +49,16 @@ module.exports = {
     ],
     "filenames/no-index": 2
   },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+        extensions: [".js",".jsx"]
+      },
+    },
+  },
   overrides: [
     {
       files: ["*.js"],
